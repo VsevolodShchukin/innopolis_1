@@ -13,7 +13,7 @@ def start_game() -> None:
 
 
 def get_apple() -> None:
-    """Функция, генеририрующая яблоко. Оно добавляет ед. жизни к показателю hp."""
+    """Функция, генерирующая яблоко. Оно добавляет ед. жизни к показателю hp."""
     global hp
     apple = random.randint(1, 3)
     hp = hp + apple
@@ -21,7 +21,7 @@ def get_apple() -> None:
 
 
 def get_sword() -> None:
-    """Функция, генеририрующая меч. Меч изменяет показатели attack игрока."""
+    """Функция, генерирующая меч. Меч изменяет показатели attack игрока."""
     global attack
     sword = random.randint(10, 25)
     print(f"Ты нашел MEЧ! Его сила атаки - {sword}.")
@@ -37,7 +37,7 @@ def get_sword() -> None:
 
 
 def fight_with_monster() -> None:
-    """Функция, генеририрующая чудовища. Обрабатывает логику боя."""
+    """Функция, генерирующая чудовища. Обрабатывает логику боя."""
     global hp
     global attack
     global monster_counter
@@ -68,7 +68,7 @@ def fight_with_monster() -> None:
 
 
 def game() -> None:
-    """Функция, генерируюшая случайность событий. Запускает и завершает игру."""
+    """Функция, генерирующая случайность событий. Запускает и завершает игру."""
     global hp
     global monster_counter
     start_game()
