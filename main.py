@@ -71,6 +71,7 @@ def game() -> None:
     """Функция, генерируюшая случайность событий. Запускает и завершает игру."""
     global hp
     global monster_counter
+    start_game()
     while hp > 0 and monster_counter != 10:
         i = random.randint(1, 11)
         if i in range(1, 6):
